@@ -7,3 +7,165 @@
   font-weight: 400;
   font-style: normal;
 }
+
+/* shared style */
+
+.display{
+    display: flex;
+}
+.primary-btn{
+    background-color: cadetblue;
+    color: aliceblue;
+    padding: 20px 25px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-radius: 8px;
+    border: 1px solid blueviolet;
+}
+
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* header style */
+
+.background{
+    background-color:rgba(255, 144, 14, 0.1);
+}
+
+/* nav bar style */
+
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+}
+.brand{
+    font-size: 3rem;
+    font-weight: 700;
+}
+.link{
+    text-decoration: none;
+    font-weight: 500;
+}
+.items{
+    list-style: none;
+    margin-right: 30px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+.navbar, .banner{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* banner related content */
+
+.banner-content{
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.title{
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+/* team and feature related style */
+
+.features{
+    align-items: center;
+}
+.team-img{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 24px;
+    margin-top: 130px;
+}
+.our-features{
+    margin-left: 130px;
+    max-width: 530px;
+}
+.p1{
+    color: gray;
+    font-size: 3rem;
+    font-weight: 500;
+}
+.p2{
+    color: black;
+    font-size: 3rem;
+    font-weight: 500;
+}
+.p3{
+    color: orange;
+    font-size: 3rem;
+    font-weight: 500;
+}
+.feature-description{
+    font-size: 1.10rem;
+    color: rgba(33, 33, 158, 0.681);
+}
+
+/* all Features */
+
+.enjoy{
+    font-size: 2rem;
+    color: gray;
+    font-weight: 700;
+}
+/* facts card */
+.facts-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.card{
+    border: 1px solid salmon;
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+}
+.number{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top:5px;
+    margin-bottom: 10px;
+}
+.name{
+   font-size: 1.25rem;
+   margin-top: 10px;
+   color: black; 
+}
+.feature-description{
+    max-width: 542px;
+    height: 52px;
+}
+/* responsiebe design for small */
+
+.banner-img{
+    width: 100%;
+}
+
+@media  screen and (max-width:576px) {
+    .features{
+       flex-direction: column; 
+    }
+    .team-img{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .our-features{
+        margin-left: 40px;
+    }
+}
+
+/* responsive design for medium size device */
+
+@media screen and (min-width:576px) and (max-width:992px) {
+    .features{
+        flex-direction: column;
+    }
+}
